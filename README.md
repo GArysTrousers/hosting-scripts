@@ -3,11 +3,14 @@
 ```
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 bash
-nvm install v24
+nvm install-latest-npm
+nvm install v25
+npm i pm2 -g
 ```
 ## Install git
 ```
-sudo apt install git
+sudo apt-get update
+sudo apt-get install git
 ```
 ## Create User
 ```
