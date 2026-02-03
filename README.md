@@ -9,8 +9,12 @@ nvm install v24
 ```
 sudo apt install git
 ```
+## Create User
+```
+sudo adduser [username]
+```
 ## Setup Server
 ```
-setup-sveltekit-project.sh | bash
+wget -qO- https://raw.githubusercontent.com/GArysTrousers/hosting-scripts/refs/heads/main/setup-sveltekit-project.sh | bash
 sh edit.sh
 ```
