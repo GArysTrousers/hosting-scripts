@@ -19,6 +19,7 @@ touch ./env/.env
 cat > ./edit.sh << EOF
 nano ./update.sh
 nano ./ecosystem.config.js
+nano ./env/.env
 EOF
 
 # make update.sh
