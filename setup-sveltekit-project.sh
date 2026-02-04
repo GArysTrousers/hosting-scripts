@@ -1,8 +1,8 @@
 #!/bin/bash
 
-read -p "App name: " name
-read -p "Repo name (user/repo): " repo
-read -p "Service Username: " username
+read -p "App name: " name < /dev/tty
+read -p "Repo name (user/repo): " repo < /dev/tty
+read -p "Service Username: " username < /dev/tty
 
 dir="/home/$username"
 
