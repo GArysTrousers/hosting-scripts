@@ -48,9 +48,9 @@ cat > ./ecosystem.config.js << EOF
 module.exports = {
   apps: [
     {
-      name: "app_name",
+      name: "$name",
       script: "./index.js",
-      cwd: "/home/server/site/build/",
+      cwd: "$dir/site/build/",
       env: {
         PORT: "3000"
       }
