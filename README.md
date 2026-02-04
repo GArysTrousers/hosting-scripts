@@ -14,7 +14,8 @@ sudo apt-get install git
 ```
 ## Create User
 ```
-sudo adduser server
+sudo adduser [username
+suod usermod -aG [username]
 ```
 ## Setup Server Script
 ```
