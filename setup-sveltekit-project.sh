@@ -1,3 +1,14 @@
+echo "App name:"
+read name
+echo "Repo name (user/repo):"
+read repo
+echo "Service Username:"
+read username
+
+dir="/home/$username"
+
+
+
 mkdir ./data
 mkdir ./site
 mkdir ./env
@@ -15,10 +26,7 @@ EOF
 cat > ./update.sh << EOF
 #!/bin/bash
 
-name=app_name
-repo=github_repo_name
-token="github token"
-dir="/home/server"
+token=""
 
 pm2 stop $name
 
@@ -26,7 +34,7 @@ set -e
 
 rm -rf "$dir/site"
 
-git clone https://${token}@github.com/GArysTrousers/${repo}.git "$dir/site"
+git clone https://\${token}@github.com/${repo}.git "$dir/site"
 cp "$dir/env/.env" "$dir/site"
 cd "$dir/site"
 npm i
