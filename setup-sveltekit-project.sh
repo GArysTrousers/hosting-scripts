@@ -1,9 +1,8 @@
-echo "App name:"
-read name
-echo "Repo name (user/repo):"
-read repo
-echo "Service Username:"
-read username
+#!/bin/bash
+
+read -p "App name: " name
+read -p "Repo name (user/repo): " repo
+read -p "Service Username: " username
 
 dir="/home/$username"
 
