@@ -16,8 +16,19 @@ sudo apt-get install git
 ```
 sudo adduser server
 ```
-## Setup Server
+## Setup Server Script
 ```
 wget -qO- https://raw.githubusercontent.com/GArysTrousers/hosting-scripts/refs/heads/main/setup-sveltekit-project.sh | bash
-sh edit.sh
 ```
+## Edit Configs and Download Software
+```
+sh edit.sh
+sh update.sh
+```
+## Start and Setup Auto Start
+```
+pm2 start ./ecosystem.config.js
+pm2 save
+pm2 startup
+```
+Follow the instructions to setup auto start
