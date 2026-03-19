@@ -1,4 +1,8 @@
 # Setup Sveltkit Project
+## Setup Auto Updates
+```
+sudo apt install unattended-upgrades
+```
 ## Install nvm
 ```
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
