@@ -2,6 +2,8 @@
 ## Setup Auto Updates
 ```
 sudo apt install unattended-upgrades
+to view logs:
+cat /var/log/unattended-upgrades/unattended-upgrades.log
 ```
 ## Install nvm
 ```
