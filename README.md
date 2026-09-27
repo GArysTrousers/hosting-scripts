@@ -7,7 +7,7 @@ cat /var/log/unattended-upgrades/unattended-upgrades.log
 ```
 ## Install nvm
 ```
-wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/refs/heads/master/install.sh | bash
 bash
 nvm install-latest-npm
 nvm install v26
