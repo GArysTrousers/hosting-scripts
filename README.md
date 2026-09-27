@@ -10,13 +10,13 @@ cat /var/log/unattended-upgrades/unattended-upgrades.log
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
 bash
 nvm install-latest-npm
-nvm install v25
+nvm install v26
 npm i pm2 -g
 ```
 ## Install git
 ```
-sudo apt-get update
-sudo apt-get install git
+sudo apt update
+sudo apt install git
 ```
 ## Create User
 ```
@@ -26,6 +26,7 @@ suod usermod -aG [username]
 ## Setup Server Script
 ```
 wget -qO- https://raw.githubusercontent.com/GArysTrousers/hosting-scripts/refs/heads/main/setup-sveltekit-project.sh | bash
+wget -qO- https://raw.githubusercontent.com/GArysTrousers/hosting-scripts/refs/heads/main/update-node.sh | update-node.sh
 ```
 ## Edit Configs and Download Software
 ```
@@ -36,6 +37,5 @@ sh update.sh
 ```
 pm2 start ./ecosystem.config.js
 pm2 save
-pm2 startup
+pm2 startup | grep 'sudo' | bash
 ```
-Follow the instructions to setup auto start
