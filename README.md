@@ -26,7 +26,7 @@ suod usermod -aG [username]
 ## Setup Server Script
 ```
 wget -qO- https://raw.githubusercontent.com/GArysTrousers/hosting-scripts/refs/heads/main/setup-sveltekit-project.sh | bash
-wget -qO- https://raw.githubusercontent.com/GArysTrousers/hosting-scripts/refs/heads/main/update-node.sh > update-node.sh
+wget -qO- https://raw.githubusercontent.com/GArysTrousers/hosting-scripts/refs/heads/main/update-node.sh > upgrade-node.sh
 ```
 ## Edit Configs and Download Software
 ```
