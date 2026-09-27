@@ -1,3 +1,4 @@
+source ~/.nvm/nvm.sh
 pm2 unstartup | grep 'sudo' | bash
 npm uninstall pm2 -g
 nvm install-latest-npm
