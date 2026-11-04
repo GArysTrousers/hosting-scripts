@@ -10,8 +10,8 @@ cat /var/log/unattended-upgrades/unattended-upgrades.log
 ```
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/refs/heads/master/install.sh | bash
 bash
-nvm install-latest-npm
 nvm install v26
+nvm install-latest-npm
 npm i pm2 -g
 ```
 ## Install git
