@@ -7,11 +7,12 @@ CUR_VER=$(nvm current)
 NEW_VER=$(nvm ls-remote $INSTALL_VER | tail -n 1 | grep -oE "v[0-9]+\.[0-9]+\.[0-9]+")
 
 if [[ $CUR_VER == $NEW_VER ]]; then
+  echo "node up to date cur:$CUR_VER latest:$NEW_VER"
   exit
 fi
 
 DATE=$(date +%m/%d/%Y)
-echo "$DATE: upgrading node $CUR_VER -> $NEW_VER" >> aun.log
+echo "$DATE: upgrading node $CUR_VER -> $NEW_VER" >> upgrade.log
 
 pm2 unstartup | grep 'sudo' | bash
 npm uninstall pm2 -g
